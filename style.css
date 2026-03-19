@@ -1,0 +1,90 @@
+body {
+  background-color: #0b6623;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container-gioco {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sidebar-lista {
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#tabellone {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  width: 400px;
+}
+.sidebar-lista {
+  flex: 1;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.cella {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.bottoni-gruppo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.evidenziata {
+  background-color: white !important;
+  color: #0b6623;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style-type: none;
+  justify-content: flex-start;
+}
+.list li {
+  background-color: white;
+  color: #0b6623;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +9,13 @@
   <body>
     <header>
       <h1>Giochiamo a Tombola</h1>
-      <div class="bottoni-gruppo">
-        <button onclick="generaTabellone()">Inizia</button>
-        <button onclick="estraiNumero()">Estrai</button>
-      </div>
+      <button onclick="generaTabellone()">Premi per Iniziare</button>
     </header>
-    <div class="container-gioco">
-      <main id="tabellone"></main>
-
-      <aside class="sidebar-lista">
-        <h3>Numeri Estratti</h3>
-        <ul id="estratto" class="list"></ul>
-      </aside>
-    </div>
+    <main id="tabellone"></main>
+    <footer>
+      <ul id="estratto"></ul>
+      <button onclick="estraiNumero()">Estrai il Numero</button>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
